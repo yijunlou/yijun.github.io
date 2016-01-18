@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Timeline | Kepler Mission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="搭建了全新的 Timeline page，感觉很有意思，感谢@panjiabang
+2016-01-17 22:19
+&amp;lt;!-- 墙内部署从 Gitcafe 变成 CNPaaS 了，Upstream 摆脱了单点困扰，哈哈~
+2015-10-25 13:34:44
+博客部署改造遭遇 Gitcafe 抽风，从 VIP 到 Upstream 全部单点，我的心好痛
+2015-10-25 10:33:50
+微">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Timeline">
+<meta property="og:url" content="http://kepler.ml/timeline/index.html">
+<meta property="og:site_name" content="Kepler Mission">
+<meta property="og:description" content="搭建了全新的 Timeline page，感觉很有意思，感谢@panjiabang
+2016-01-17 22:19
+&amp;lt;!-- 墙内部署从 Gitcafe 变成 CNPaaS 了，Upstream 摆脱了单点困扰，哈哈~
+2015-10-25 13:34:44
+博客部署改造遭遇 Gitcafe 抽风，从 VIP 到 Upstream 全部单点，我的心好痛
+2015-10-25 10:33:50
+微">
+<meta property="og:updated_time" content="2016-01-18T03:45:04.480Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Timeline">
+<meta name="twitter:description" content="搭建了全新的 Timeline page，感觉很有意思，感谢@panjiabang
+2016-01-17 22:19
+&amp;lt;!-- 墙内部署从 Gitcafe 变成 CNPaaS 了，Upstream 摆脱了单点困扰，哈哈~
+2015-10-25 13:34:44
+博客部署改造遭遇 Gitcafe 抽风，从 VIP 到 Upstream 全部单点，我的心好痛
+2015-10-25 10:33:50
+微">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+
+  
+
+  
+</head>
+<body>
+  <div id="container">
+    <header id="header" class="print-invisible">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo"><span class="site-title">Kepler Mission</span></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/timeline">Timeline</a>
+        
+          <a class="main-nav-link" href="/favorite">Favorite</a>
+        
+          <a class="main-nav-link" href="/wiki">Wiki</a>
+        
+      </nav>
+      
+      <nav id="sub-nav">
+        <div class="profile" id="profile-nav">
+          <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+        </div>
+      </nav>
+      
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"> </button><input type="hidden" name="sitesearch" value="http://kepler.ml"></form>
+      </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tr>
+      
+        <td><a class="main-nav-link" href="/">Home</a></td>
+      
+        <td><a class="main-nav-link" href="/archives">Archives</a></td>
+      
+        <td><a class="main-nav-link" href="/timeline">Timeline</a></td>
+      
+        <td><a class="main-nav-link" href="/favorite">Favorite</a></td>
+      
+        <td><a class="main-nav-link" href="/wiki">Wiki</a></td>
+      
+      <td>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://kepler.ml"></form>
+      </td>
+      </tr>
+    </table>
+  </div>
+</header>
+    <div class="outer">
+      
+        <aside id="profile">
+  <div class="inner profile-inner">
+  	<div class="base-info profile-block">
+      <img id="avatar" src="/css/images/avatar.png">
+      <h2 id="name">Aphelion</h2>
+      <h3 id="title">Happiness is true when it is shared</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Hangzhou, China</span>
+      <a id="follow" href="https://github.com/yijunlou/" target="_blank">FOLLOW</a>
+    </div>
+    
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        4
+        <span>posts</span>
+      </div>
+      <div class="article-info-block">
+        5
+        <span>tags</span>
+      </div>
+    </div>
+    
+    
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+        
+        
+        
+        <td><a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" title="github"><i   class="fa fa-github"></i></a></td>
+        
+        
+        
+        <td><a href="/#" target="_blank" title="twitter"><i   class="fa fa-twitter"></i></a></td>
+        
+        
+        
+        <td><a href="/#" target="_blank" title="facebook"><i   class="fa fa-facebook"></i></a></td>
+        
+        
+        
+        <td><a href="/#" target="_blank" title="dribbble"><i   class="fa fa-dribbble"></i></a></td>
+        
+        
+        
+        <td><a href="/atom.xml" target="_blank" title="rss"><i   class="fa fa-rss"></i></a></td>
+        
+        </tr>
+      </table>
+    </div>
+    
+  </div>
+</aside>
+      
+      <section id="main"><article id="timeline-undefined" class="article article-type-timeline" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Timeline
+    </h1>
+  
+
+        
+        <div class="article-meta">
+          <div class="article-date">
+  <i class="fa fa-calendar"></i>
+    <time datetime="2016-01-18T03:45:04.480Z" itemprop="datePublished">2016-01-17</time>
+</div>
+          
+          
+
+          
+        </div>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        <blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-child fa-stack-1x"></i></span>搭建了全新的 Timeline page，感觉很有意思，感谢<a href="https://blog.jamespan.me/" target="_blank" rel="external">@panjiabang</a></p>
+<footer><span>2016-01-17 22:19</span></footer></blockquote>
+<!-- <blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-sitemap fa-stack-1x"></i></span>墙内部署从 Gitcafe 变成 CNPaaS 了，Upstream 摆脱了单点困扰，哈哈~</p>
+<footer><span>2015-10-25 13:34:44</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-sitemap fa-stack-1x"></i></span>博客部署改造遭遇 Gitcafe 抽风，从 VIP 到 Upstream 全部单点，我的心好痛</p>
+<footer><span>2015-10-25 10:33:50</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-weixin fa-stack-1x"></i></span>微信公众号有了第一个订阅者，是博客的老读者，感动哭了</p>
+<footer><span>2015-10-03 11:32:39</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-weixin fa-stack-1x"></i></span>#单身狗の日常# 大学时候就不熟的女神突然主动联系你加微信，通常没好事</p>
+<footer><span>2015-06-18 21:56:58</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-book fa-stack-1x"></i></span>#单身狗の日常# 在咖啡馆吃晚餐，然后把《<a href="http://book.douban.com/subject/26306686/">创业维艰</a>》看完了</p>
+<footer><span>2015-04-19 23:31:01</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-cogs fa-stack-1x"></i></span>把博客的时间线的实现方式换了，直接使用 Hexo 来生成，自己写了一个 Hexo Tag 解析器</p>
+<footer><span>2015-04-19 12:01:33</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-film fa-stack-1x"></i></span><a href="http://www.bilibili.com/sp/路人女主的养成方法">#路人女主的养成方法#</a> 路人女主完结了，暂时没有新番可看了，拙计</p>
+<footer><span>2015-03-28 17:32:59</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-book fa-stack-1x"></i></span>搞到了找了好久的《人本界面》，万能的淘宝！</p>
+<footer><span>2015-01-24 23:55:21</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-code fa-stack-1x"></i></span>地址收缩算法！</p>
+<footer><span>2015-01-23 18:38:26</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-code-fork fa-stack-1x"></i></span>总算把洗数据代码的性能提升了好多好多，几次重写，太不容易</p>
+<footer><span>2015-01-21 12:15:44</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-laptop fa-stack-1x"></i></span>最近喜欢上了前端技术，感觉新世界的大门打开了</p>
+<footer><span>2015-01-19 12:41:27</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-coffee fa-stack-1x"></i></span>如何才能恢复早睡早起…</p>
+<footer><span>2015-01-19 03:14:39</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-film fa-stack-1x"></i></span><a href="http://tv.sohu.com/20150114/n407782242.shtml">#Person of Interest S04E12#</a> Agent Shaw 还活着！肯定是演员档期冲突没法拍某几集，然后就拍成这样子</p>
+<footer><span>2015-01-19 01:39:07</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-code fa-stack-1x"></i></span>修改了一下 Timestamp 里面包含时间戳的容器，然后写了一篇文章</p>
+<footer><span>2015-01-18 14:21:07</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-code fa-stack-1x"></i></span>复制到剪贴板是个大难题，只能通过点击时全选来减少操作，没法自动复制</p>
+<footer><span>2015-01-15 04:23:25</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-code fa-stack-1x"></i></span>时间戳轻应用完成，保存到主屏幕的效果超赞</p>
+<footer><span>2015-01-15 01:02:06</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-code fa-stack-1x"></i></span>我说我要写一个 iOS 应用专门算时间戳，@不周跟我说可以写一个轻应用放博客上，通过浏览器书签访问</p>
+<footer><span>2015-01-14 21:37:41</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-slideshare fa-stack-1x"></i></span>成功把 <a href="http://lab.hakim.se/reveal-js/">reveal.js</a> 集成到<a href="/2015/01/13/presentation-with-revealjs/" target="_blank">博客</a>了，不知道怎么做特效的时候可以看 <a href="/slides/index.html" target="_blank">demo</a></p>
+<footer><span>2015-01-13 13:32:04</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-code-fork fa-stack-1x"></i></span>尝试不用 iframe 来加载 Timeline 页面的努力以失败告终，一翻折腾之后学会了<a href="/2015/01/12/redirect-with-js/" target="_blank">用 js 控制浏览器跳转页面</a>，然后给博客弄了 <a href="https://github.com/sergiolepore/hexo-tag-emojis">Emoji 插件</a>，也不算白忙活😊</p>
+<footer><span>2015-01-11 22:54:30</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-code-fork fa-stack-1x"></i></span>一写代码就根本停不下来</p>
+<footer><span>2015-01-10 01:34:45</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-dashboard fa-stack-1x"></i></span>以为线上机器 HSF 线程池满，原来是虚惊一场</p>
+<footer><span>2015-01-08 23:50:10</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-warning fa-stack-1x"></i></span>总算把这个时间轴折腾好了，可是又到半夜才睡觉，唉</p>
+<footer><span>2015-01-08 02:58:13</span></footer></blockquote>
+<blockquote><p><span class="fa-stack fa-lg"><i class="fa fa-film fa-stack-1x"></i></span><a href="http://tv.sohu.com/20150107/n407604754.shtml">#Person of Interest S04E11#</a> Agent Shaw 跪了，我的心好痛</p>
+<footer><span>2015-01-08 02:45:51</span></footer></blockquote> –&gt;
+<hr>
+<p>鸣谢：</p>
+<ul>
+<li><a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome Icons</a></li>
+<li><a href="http://www.bootcdn.cn">BootCDN</a></li>
+<li><a href="http://www.emoji-cheat-sheet.com">Emoji cheat sheet</a></li>
+<li><a href="http://hexo.io/docs/plugins.html">Plugins | Hexo</a></li>
+</ul>
+-->
+        
+
+        
+
+      
+    </div>
+    
+
+    
+
+    
+
+    <footer class="article-footer print-invisible">
+      <a data-url="http://kepler.ml/timeline/index.html" data-id="cijjfffrt0002o8w5vutzjgha" class="article-share-link">Share</a>
+      
+        <a href="http://kepler.ml/timeline/index.html#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+<div class="print-invisible">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+</div>
+
+</section>
+      
+        <aside id="sidebar" class="print-invisible">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">recents</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/16/diary-2016-01-16/" class="thumbnail">
+  
+    <span style="background-image:url(http://ww4.sinaimg.cn/large/7176c9b5gw1f034u06s0gj20sg0e845z.jpg)" alt="16,January,2016 diary" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/16/diary-2016-01-16/" class="title">16,January,2016 diary</a></p>
+              <p class="item-category"></p>
+              <p class="item-date"><time datetime="2016-01-17T04:59:59.000Z" itemprop="datePublished">2016-01-16</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/15/memorial-of-Snape/" class="thumbnail">
+  
+    <span style="background-image:url(http://ww1.sinaimg.cn/large/7176c9b5gw1f033bd5apuj20go0adt8u.jpg)" alt="被嫌弃的斯内普的一生" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/15/memorial-of-Snape/" class="title">被嫌弃的斯内普的一生</a></p>
+              <p class="item-category"><a class="article-category-link" href="/categories/digest/">digest</a></p>
+              <p class="item-date"><time datetime="2016-01-16T00:38:59.000Z" itemprop="datePublished">2016-01-15</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/15/media-inference/" class="thumbnail">
+  
+    <span style="background-image:url(http://ww4.sinaimg.cn/large/7176c9b5gw1f00s9kllipj20go09edhd.jpg)" alt="“拆了故宫建白宫”的舆论风潮是如何鼓噪起来的”" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/15/media-inference/" class="title">“拆了故宫建白宫”的舆论风潮是如何鼓噪起来的”</a></p>
+              <p class="item-category"><a class="article-category-link" href="/categories/digest/">digest</a></p>
+              <p class="item-date"><time datetime="2016-01-15T19:09:55.000Z" itemprop="datePublished">2016-01-15</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/10/financial-power-of-US/" class="thumbnail">
+  
+    <span style="background-image:url(http://ww2.sinaimg.cn/large/7176c9b5gw1ezuznc5u33j20e6099wfp.jpg)" alt="美元的金融霸权" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/10/financial-power-of-US/" class="title">美元的金融霸权</a></p>
+              <p class="item-category"><a class="article-category-link" href="/categories/digest/">digest</a></p>
+              <p class="item-date"><time datetime="2016-01-10T18:53:20.000Z" itemprop="datePublished">2016-01-10</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/digest/">digest</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Finance/">Finance</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Strategy/">Strategy</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/diary/">diary</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/media/">media</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reality/">reality</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tag cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Finance/" style="font-size: 10px;">Finance</a> <a href="/tags/Strategy/" style="font-size: 10px;">Strategy</a> <a href="/tags/diary/" style="font-size: 10px;">diary</a> <a href="/tags/media/" style="font-size: 10px;">media</a> <a href="/tags/reality/" style="font-size: 10px;">reality</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+          <li>
+            <a href="http://lucida.me/">Lucida</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+  
+  <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>
+      
+    </div>
+    <footer id="footer" class="print-invisible">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Aphelion<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/JamesPan/hexo-theme-icarus">icarus</a>. 
+    </div>
+  </div>
+</footer>
+    
+
+<script>
+  var disqus_shortname = 'Yijundisqus';
+  
+  var disqus_identifier = '/timeline/index.html';
+  var disqus_title = 'Timeline';
+  var disqus_url = 'http://kepler.ml/timeline/index.html';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + 'a.disquscdn.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script async="async" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/2.0/busuanzi.mini.js"></script>
+
+<script type="text/javascript">
+$("span.heimu").attr("title", "你知道的太多了")
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
