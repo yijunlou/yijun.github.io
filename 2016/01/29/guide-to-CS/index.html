@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>编程入门指南2.0版 | Kepler Mission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;lt;!-- indicate-the-source --&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编程入门指南2.0版">
+<meta property="og:url" content="http://kepler.ml/2016/01/29/guide-to-CS/index.html">
+<meta property="og:site_name" content="Kepler Mission">
+<meta property="og:description" content="&amp;lt;!-- indicate-the-source --&amp;gt;">
+<meta property="og:image" content="https://pic2.zhimg.com/b330ecbc2cd43a23f6beff47bbf4cbe9_b.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/09cfc28b6d5433dac166080244a839ec_b.jpg">
+<meta property="og:updated_time" content="2016-01-30T03:10:50.968Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="编程入门指南2.0版">
+<meta name="twitter:description" content="&amp;lt;!-- indicate-the-source --&amp;gt;">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71920548-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+</head>
+<body>
+  <div id="container">
+    <header id="header" class="print-invisible">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo"><i class="logo" style="background-image: url(/css/images/logo.png)"></i><span class="site-title">Kepler Mission</span></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/timeline">Timeline</a>
+        
+          <a class="main-nav-link" href="/favorite">Favorite</a>
+        
+          <a class="main-nav-link" href="/wiki">Wiki</a>
+        
+      </nav>
+      
+      <nav id="sub-nav">
+        <div class="profile" id="profile-nav">
+          <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+        </div>
+      </nav>
+      
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"> </button><input type="hidden" name="sitesearch" value="http://kepler.ml"></form>
+      </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tr>
+      
+        <td><a class="main-nav-link" href="/">Home</a></td>
+      
+        <td><a class="main-nav-link" href="/archives">Archives</a></td>
+      
+        <td><a class="main-nav-link" href="/timeline">Timeline</a></td>
+      
+        <td><a class="main-nav-link" href="/favorite">Favorite</a></td>
+      
+        <td><a class="main-nav-link" href="/wiki">Wiki</a></td>
+      
+      <td>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://kepler.ml"></form>
+      </td>
+      </tr>
+    </table>
+  </div>
+</header>
+
+    <div class="outer">
+      
+        <aside id="profile">
+  <div class="inner profile-inner">
+  	<div class="base-info profile-block">
+      <img id="avatar" src="/css/images/avatar.png">
+      <h2 id="name">Aphelion</h2>
+      <h3 id="title">Happiness is true when it is shared</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Hangzhou, China</span>
+      <a id="follow" href="https://github.com/yijunlou/" target="_blank">FOLLOW</a>
+    </div>
+    
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        12
+        <span>posts</span>
+      </div>
+      <div class="article-info-block">
+        14
+        <span>tags</span>
+      </div>
+    </div>
+    
+    
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+        
+        
+        
+        <td><a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" title="github"><i   class="fa fa-github"></i></a></td>
+        
+        
+        
+        <td><a href="/#" target="_blank" title="twitter"><i   class="fa fa-twitter"></i></a></td>
+        
+        
+        
+        <td><a href="/#" target="_blank" title="facebook"><i   class="fa fa-facebook"></i></a></td>
+        
+        
+        
+        <td><a href="/#" target="_blank" title="dribbble"><i   class="fa fa-dribbble"></i></a></td>
+        
+        
+        
+        <td><a href="/atom.xml" target="_blank" title="rss"><i   class="fa fa-rss"></i></a></td>
+        
+        </tr>
+      </table>
+    </div>
+    
+  </div>
+</aside>
+
+      
+      <section id="main"><article id="post-guide-to-CS" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      
+	
+		<img src="http://ww4.sinaimg.cn/large/7176c9b5gw1f0hcl7500kj20nz0b40uc.jpg" class="article-banner">
+	
+
+
+
+    
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      编程入门指南2.0版
+    </h1>
+  
+
+        
+        <div class="article-meta">
+          <div class="article-date">
+  <i class="fa fa-calendar"></i>
+    <time datetime="2016-01-30T03:04:29.000Z" itemprop="datePublished">2016-01-29</time>
+</div>
+          
+          
+<div class="article-category">
+	<i class="fa fa-flag"></i>
+	<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Hits
+</div>
+
+
+          
+<div class="article-author"><i class="fa fa-user"></i>
+  
+  <a href="http://kepler.ml" title="Aphelion">Aphelion</a>
+</div>
+  
+
+        </div>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        <div id="toc" class="toc-article">
+          <!-- <strong class="toc-title">contents</strong> -->
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u540E_u8BB0"><span class="toc-number">1.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u9644_28zh_E8ng_29_u5F55_28w_E9n_29"><span class="toc-number">2.</span> <span class="toc-text">附(zhèng)录(wén)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u524D_u8A00"><span class="toc-number">3.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5FC3_u6001_u8C03_u6574"><span class="toc-number">4.</span> <span class="toc-text">心态调整</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5F00_u59CB_u5B66_u4E60"><span class="toc-number">5.</span> <span class="toc-text">开始学习</span></a></li></ol>
+        </div>
+      
+        <span class='indicate'><blockquote><p>转载请注明出处：http://kepler.ml/2016/01/29/guide-to-CS/</p><p>访问原文「<a href='http://kepler.ml/2016/01/29/guide-to-CS/'>编程入门指南2.0版</a>」获取最佳阅读体验并参与讨论</p></blockquote></span>
+<script type="text/javascript">
+(function() {
+  Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+  }
+  NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+  }
+  var domain = document.domain;
+  var white_list = ['kepler.ml'];
+  if (white_list.indexOf(domain) >= 0) {
+    var elements = document.getElementsByClassName('indicate');
+    elements.remove();
+  }
+})()
+</script>
+
+<a id="more"></a>
+<p>著作权归作者所有。<br>商业转载请联系作者获得授权，非商业转载请注明出处。<br>作者：Badger<br>链接：<a href="http://zhuanlan.zhihu.com/xiao-jing-mo/19959253" target="_blank" rel="external">http://zhuanlan.zhihu.com/xiao-jing-mo/19959253</a><br>来源：知乎</p>
+<p><strong>启蒙</strong></p>
+<p>「学编程应该学哪门语言？」这经常是初学者问的第一个问题，但这是一个错误的问题，你最先考虑的问题应该是「哪些东西构成了编程学习的基础」？</p>
+<p>编程知识的金字塔底部有三个关键的部分：</p>
+<ul>
+<li><p>算法思想：例如怎样找出一组数中最大的那个数？首先你得有一个 maxSoFar 变量，之后对于每个数…</p>
+</li>
+<li><p>语法：我怎样用某种编程语言表达这些算法，让计算机能够理解。</p>
+</li>
+<li><p>系统基础：为什么 while(1) 时线程永远无法结束？为什么 int *foo() { int x = 0; return &x; } 是不可行的？</p>
+</li>
+</ul>
+<p>启蒙阶段的初学者若选择C语言作为第一门语言会很困难并且枯燥，这是因为他们被迫要同时学习这三个部分，在能做出东西前要花费很多时间。</p>
+<p>因此，为了尽量最小化「语法」与「系统基础」这两部分，建议使用 Python 作为学习的第一门语言，虽然Python对初学者很友好，但这并不意味着它只是一个「玩具」，在大型项目中你也能见到它强大而灵活的身影。熟悉Python后，学习C语言是便是一个不错的选择了：学习C语言会帮助你以靠近底层的视角思考问题，并且在后期帮助你理解操作系统层级的一些原理，如果你只想成为一个普通（平庸）的开发者你可以不学习它。</p>
+<p>下面给出了一个可供参考的启蒙阶段导引，完成后你会在头脑中构建起一个整体框架，帮助你进行自顶向下的探索。</p>
+<ol>
+<li>完成 <a href="https://link.zhihu.com/?target=http%3A//learnpythonthehardway.org/book/" target="_blank" rel="external">Learn Python The Hard Way</a>（<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/26264642/" target="_blank" rel="external">“笨办法”学Python（第3版） (豆瓣)</a>）</li>
+<li>完成 <a href="https://link.zhihu.com/?target=https%3A//www.edx.org/course/introduction-computer-science-mitx-6-00-1x-0%23.VNL-zlWUdQ0" target="_blank" rel="external">MIT 计算机导论课</a>（如果你英语不过关：<a href="https://link.zhihu.com/?target=http%3A//www.xuetangx.com/courses/MITx/6_00_1x/2014_T2/about" target="_blank" rel="external">麻省理工学院公开课：计算机科学及编程导论</a>）。<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E5%25A4%25A7%25E8%25A7%2584%25E6%25A8%25A1%25E5%25BC%2580%25E6%2594%25BE%25E5%259C%25A8%25E7%25BA%25BF%25E8%25AF%25BE%25E5%25A0%2582" target="_blank" rel="external">MOOC</a> 是学习编程的一个有效途径。虽然该课程的教学语言为Python，但作为一门优秀的导论课，它强调学习计算机科学领域里的重要概念和范式，而不仅仅是教你特定的语言。如果你不是科班生，这能让你在自学时开阔眼界；课程内容：计算概念，python编程语言，一些简单的数据结构与算法，测试与调试。支线任务：完成《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/3112503/" target="_blank" rel="external">Python核心编程</a> 》</li>
+<li>完成 <a href="https://link.zhihu.com/?target=https%3A//www.edx.org/course/introduction-computer-science-harvardx-cs50x%23.VNyhfFWUdQ1" target="_blank" rel="external">Harvard CS50</a> (如果你英语不过关：完成<a href="https://link.zhihu.com/?target=http%3A//v.163.com/special/opencourse/cs50.html" target="_blank" rel="external">哈佛大学公开课：计算机科学 cs50</a> 。同样是导论课，但这门课与MIT的导论课互补。教学语言涉及 C, PHP, JavaScript + SQL, HTML + CSS，内容的广度与深度十分合理，还能够了解到最新的 一些科技成果，可以很好激发学习计算机的兴趣。支线任务：</li>
+</ol>
+<ul>
+<li><p>阅读《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1024570/" target="_blank" rel="external">编码的奥秘</a>》</p>
+</li>
+<li><p>完成《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1786294/" target="_blank" rel="external">C语言编程</a>》</p>
+</li>
+<li>[可选] 如果你的目标是成为一名 <a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E9%25BB%2591%25E5%25AE%25A2%23Hacker.E4.B8.8ECracker" target="_blank" rel="external">Hacker</a>：阅读 <a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1784887/" target="_blank" rel="external">Hacker’s Delight</a></li>
+</ul>
+<p>PS：如果教育对象还是一个孩子，以下的资源会很有帮助（年龄供参考）：</p>
+<ul>
+<li><p>5-8岁： <a href="https://link.zhihu.com/?target=http%3A//turtleacademy.com/" target="_blank" rel="external">Turtle Academy</a></p>
+</li>
+<li><p>8-12岁：<a href="https://link.zhihu.com/?target=http%3A//jasonrbriggs.com/python-for-kids/" target="_blank" rel="external">Python for Kids</a></p>
+</li>
+<li><p>12岁以上： <a href="https://link.zhihu.com/?target=http%3A//scratch.mit.edu/" target="_blank" rel="external">MIT Scratch</a> （不要小看Scratch，有人用它写3D渲染的光线追踪系统）或 <a href="https://link.zhihu.com/?target=https%3A//www.khanacademy.org/computing/computer-programming" target="_blank" rel="external">KhanAcademy</a></p>
+</li>
+</ul>
+<p><strong>入门</strong></p>
+<p>结束启蒙阶段后，初学者积累了一定的代码量，对编程也有了一定的了解。这时你可能想去学一门具体的技术，诸如Web开发，Android开发，iOS开发什么的，你可以去尝试做一些尽可能简单的东西，给自己一些正反馈，补充自己的推动力。<u>但记住别深入</u>，这些技术有无数的细节，将来会有时间去学习；同样的，这时候也别过于深入特定的框架和语言，现在是学习<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E8%25AE%25A1%25E7%25AE%2597%25E6%259C%25BA%25E7%25A7%2591%25E5%25AD%25A6" target="_blank" rel="external">计算机科学</a>通用基础知识的时候，不要试图去抄近路直接学你现在想学的东西，这是注定会失败的。</p>
+<p>那么入门阶段具体该做些什么呢？这时候你需要做的是反思自己曾经写过的程序，去思考程序为什么(Why)要这样设计？，思考怎样(How)写出更好的程序？试图去探寻理解编程的本质：利用计算机<u>解决问题</u>。</p>
+<p>设想 ：</p>
+<p>X = 用于思考解决方案的时间，即「解决问题」 部分</p>
+<p>Y = 用于实现代码的时间，即「利用计算机」部分」</p>
+<p>编程能力 = F(X, Y) （X&gt;Y）</p>
+<p>要想提高编程能力，就得优化 X，Y 与函数 F(X, Y)，很少有书的内容能同时着重集中在这三点上，但有一本书做到了——<em><a href="https://link.zhihu.com/?target=http%3A//mitpress.mit.edu/sicp/full-text/book/book.html" target="_blank" rel="external">Structure and Interpretation of Computer Programs</a></em>(SICP)《计算机程序的构造和解释》，它为你指明了这三个变量的方向。在阅读SICP之前，你也许能通过调用几个函数解决一个简单问题。但阅读完SICP之后，你会学会如何将问题抽象并且分解，从而处理更复杂更庞大的问题，这是编程能力巨大的飞跃，这会在本质上改变你思考问题以及用代码解决问题的方式。此外，SICP的教学语言为 Scheme，可以让你初步了解<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E5%2587%25BD%25E6%2595%25B8%25E7%25A8%258B%25E5%25BC%258F%25E8%25AA%259E%25E8%25A8%2580" target="_blank" rel="external">函数式编程</a>。更重要的是，他的语法十分简单，你可以很快学会它，从而把更多的时间用于学习书中的编程思想以及复杂问题的解决之道上。</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E5%25BD%25BC%25E5%25BE%25B7%25C2%25B7%25E8%25AB%25BE%25E7%25B1%25B3%25E6%25A0%25BC" target="_blank" rel="external">Peter Norvig</a> 曾经写过一篇非常精彩的SICP<a href="https://link.zhihu.com/?target=http%3A//www.amazon.com/review/R403HR4VL71K8/ref%3Dcm_cr_rdp_perm" target="_blank" rel="external">书评</a>，其中有这样一段：</p>
+<blockquote>
+<p>To use an analogy, if SICP were about automobiles, it would be for the person who wants to know how cars work, how they are built, and how one might design fuel-efficient, safe, reliable vehicles for the 21st century. The people who hate SICP are the ones who just want to know how to drive their car on the highway, just like everyone else.</p>
+</blockquote>
+<p>如果你是文中的前者，<u>阅读SICP将成为你衔接启蒙与入门阶段的关键点</u></p>
+<p>虽然SICP是一本「入门书」，但对于初学者还是有一定的难度，以下是一些十分有用的辅助资源：</p>
+<ul>
+<li><a href="https://link.zhihu.com/?target=https%3A//www.udacity.com/course/cs212" target="_blank" rel="external">Udacity CS212 Design of Computer Program</a>)： 由上文提到的Google研究主管Peter Norvig 主讲，教学语言为 Python，内容有一定难度。</li>
+<li><a href="https://link.zhihu.com/?target=http%3A//www.ccs.neu.edu/home/matthias/HtDP2e/Draft/index.html" target="_blank" rel="external">How to Design Programs, Second Edition</a>：HtDP的起点比SICP低，书中的内容循循善诱，对初学者很友好，如果觉得完成SICP过于困难，可以考虑先读一读HtDP。</li>
+<li><a href="https://link.zhihu.com/?target=http%3A//webcast.berkeley.edu/playlist%23c%2Cd%2CComputer_Science%2CEC3E89002AA9B9879E" target="_blank" rel="external">UC Berkeley SICP授课视频</a>以及 SICP 的两位作者给 Hewlett-Packard 公司员工培训时的录像(<a href="https://link.zhihu.com/?target=https%3A//github.com/DeathKing/Learning-SICP/" target="_blank" rel="external">中文化项目</a>)</li>
+<li><a href="https://link.zhihu.com/?target=http%3A//composingprograms.com/" target="_blank" rel="external">Composing Programs</a>：一个继承了SICP思想但使用Python作为教学语言的编程导论（其中包含了一些小项目）</li>
+<li><a href="https://link.zhihu.com/?target=http%3A//sicp.readthedocs.org/en/latest/index.html" target="_blank" rel="external">SICP 解题集</a>：对于书后的习题，作为初学者应<u>尽力并量力</u>完成。</li>
+</ul>
+<p>完成了这部分学习后，你会逐步建立起一个自己的程序设计模型，你的脑子里不再是一团乱麻，你会意识到记住库和语法并不会教你如何解决编程问题，接下来要学些什么，在你心里也会明朗了很多。<u>这时候才是真正开始进行项目实践，补充推动力的好时机</u>。关于项目实践：对于入门阶段的初学者，参与开源项目还为时过早，这时候应该开始一些简单的项目，诸如搭建一个网站并维护它，或是编写一个小游戏再不断进行扩展，如果你自己的想法不明确，推荐你关注 <a href="http://zhuanlan.zhihu.com/alchemelon" target="_blank" rel="external">炼瓜研究所</a> ，或者从 <a href="https://link.zhihu.com/?target=https%3A//github.com/karan/Projects/" target="_blank" rel="external">Mega Project List</a> 中选取自己喜欢的项目。</p>
+<p>如果你觉得SICP就是搞不定，也不要强迫自己，先跳过，继续走常规路线：开始读 <em><a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1998341/" target="_blank" rel="external">The Elements of Computing Systems</a></em> 吧，它会教会你从最基本的 Nand 门开始构建计算机，直到俄罗斯方块在你的计算机上顺利运行。 <a href="https://link.zhihu.com/?target=http%3A//www.nand2tetris.org/course.php" target="_blank" rel="external">具体内容</a>不多说了，这本书会贯穿你的整个编程入门阶段，你入门阶段的目标就是坚持完成这本书的所有项目（包括一个<strong>最简的</strong>编译器与操作系统）。</p>
+<p><strong>为了完全搞定这本书，为了继续打好根基。为了将来的厚积薄发，在下面这几个方面你还要做足功课（注意：下面的内容没有绝对意义上的先后顺序）：</strong></p>
+<p><strong>计算机系统基础</strong></p>
+<p>有了之前程序设计的基础后，想更加深入地把握计算机科学的脉络，不妨看看这本书：《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/5333562/" target="_blank" rel="external">深入理解计算机系统</a>》 <em>Computer Systems A Programmer’s Perspective</em> 。这里点名批评这本书的中译名，其实根本谈不上什么深入啦，这本书只是 <a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E5%258D%25A1%25E5%2586%2585%25E5%259F%25BA%25E6%25A2%2585%25E9%259A%2586%25E5%25A4%25A7%25E5%25AD%25A6" target="_blank" rel="external">CMU</a>的「计算机系统导论」的教材而已。CMU的计算机科学专业相对较偏软件，该书就是从一个程序员的视角观察计算机系统，以「程序在计算机中如何执行」为主线，全面阐述计算机系统内部实现的诸多细节。</p>
+<p>如果你看书觉得有些枯燥的话，可以跟一门 Coursera 上的 MOOC: <a href="https://link.zhihu.com/?target=https%3A//www.coursera.org/course/hwswinterface" target="_blank" rel="external">The Hardware/Software Interface</a>，这门课的内容是 CSAPP 的一个子集，但是最经典的<a href="https://link.zhihu.com/?target=http%3A//csapp.cs.cmu.edu/public/labs.html" target="_blank" rel="external">实验部分</a>都移植过来了。同时，可以看看 <a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1139336/" target="_blank" rel="external">The C Programming Language</a>，回顾一下C语言的知识。</p>
+<p>完成这本书后，你会具备坚实的系统基础，也具有了学习操作系统，编译器，计算机网络等内容的先决条件。当学习更高级的系统内容时，翻阅一下此书的相应章节，同时编程实现其中的例子，一定会对书本上的理论具有更加感性的认识，真正做到经手的代码，从上层设计到底层实现都了然于胸，并能在脑中回放数据在网络-&gt;内存-&gt;缓存-&gt;CPU的流向。</p>
+<p>此外，也是时候去接触 UNIX 哲学了: KISS - Keep it Simple, Stupid. 在实践中，这意味着你要开始熟悉命令行界面，配置文件。并且在开发中逐渐脱离之前使用的IDE，学会使用Vim或Emacs（或者最好两者都去尝试）。</p>
+<ul>
+<li><p>阅读 《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1033144/" target="_blank" rel="external">http://book.douban.com/subject/1033144/</a>》</p>
+</li>
+<li><p>阅读《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1467587/" target="_blank" rel="external">UNIX编程艺术 </a>》</p>
+</li>
+<li>折腾你的 <a href="https://link.zhihu.com/?target=http%3A//heather.cs.ucdavis.edu/%7Ematloff/unix.html" target="_blank" rel="external">UN*X</a> 系统</li>
+</ul>
+<p><strong>数据结构与算法基础</strong></p>
+<p>如今，很多人认为编程（特别是做web开发）的主要部分就是使用别人的代码，能够用清晰简明的方式表达自己的想法比掌握硬核的数学与算法技巧重要的多，数据结构排序函数二分搜索这不都内置了吗？工作中永远用不到，学算法有啥用啊？这种扛着实用主义大旗的「码农」思想当然不可取。没有扎实的理论背景，遭遇瓶颈是迟早的事。</p>
+<p>数据结构和算法是配套的，入门阶段你应该掌握的主要内容应该是：这个问题用什么算法和数据结构能更快解决。这就要求你对常见的数据结构和算法了熟于心，你不一定要敲代码，用纸手写流程是更快的方式。对你不懂的<a href="https://link.zhihu.com/?target=http%3A//en.wikipedia.org/wiki/List_of_data_structures" target="_blank" rel="external">数据结构</a>和<a href="https://link.zhihu.com/?target=http%3A//en.wikipedia.org/wiki/List_of_algorithms" target="_blank" rel="external">算法</a>，你要去搜它主要拿来干嘛的，使用场景是什么。</p>
+<p>供你参考的学习资源：</p>
+<ul>
+<li>《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1885170/" target="_blank" rel="external">算法导论 </a>》：有人说别把这本书当入门书，这本书本来就不是入门书嘛，虽说书名是 Introduction to Algorithms，这只不过是因为作者不想把这本书与其他书搞重名罢了。当然，也不是没办法拿此书入门，读第一遍的时候跳过习题和证明就行了嘛，如果还觉得心虚先看看这本《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1139426/" target="_blank" rel="external">数据结构与算法分析</a>》</li>
+<li>Coursera Algorithms: Design and Analysis [<a href="https://link.zhihu.com/?target=https%3A//www.coursera.org/course/algo" target="_blank" rel="external">Part 1</a>] &amp; [<a href="https://link.zhihu.com/?target=https%3A//www.coursera.org/course/algo2" target="_blank" rel="external">Part 2</a>]： Stanford 开的算法课，不限定语言，两个部分跟下来算法基础基本就有了；英语没过关的：<a href="https://link.zhihu.com/?target=http%3A//v.163.com/special/opencourse/algorithms.html" target="_blank" rel="external">麻省理工学院公开课：算法导论</a></li>
+<li>入门阶段还要注意培养使用常规算法解决小规模问题的能力，结合前文的SICP部分可以读读这几本书：《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/3227098/" target="_blank" rel="external">编程珠玑 </a>》，《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1173548/" target="_blank" rel="external">程序设计实践 </a>》</li>
+</ul>
+<p><strong>编程语言基础</strong></p>
+<blockquote>
+<p>Different languages solve the same problems in different ways. By learning several different approaches, you can help broaden your thinking and avoid getting stuck in a rut. Additionally, learning many languages is far easier now, thanks to the wealth of freely available software on the Internet</p>
+<ul>
+<li><a href="https://link.zhihu.com/?target=https%3A//pragprog.com/the-pragmatic-programmer" target="_blank" rel="external">The Pragmatic Programmer</a></li>
+</ul>
+</blockquote>
+<p>此外还要知道，学习第n门编程语言的难度是第(n-1)门的一半，所以尽量去尝试不同的编程语言与编程范式，若你跟寻了前文的指引，你已经接触了：「干净」的脚本语言 Python, 传统的命令式语言 C, 以及<a href="https://link.zhihu.com/?target=http%3A//matt.might.net/articles/i-love-you-in-racket/" target="_blank" rel="external">浪漫</a>的函数式语言 Scheme/Racket 三个好朋友。但仅仅是接触远远不够，你还需要不断继续加深与他们的友谊，并尝试结交新朋友，美而雅的 <a href="https://link.zhihu.com/?target=http%3A//mislav.uniqpath.com/poignant-guide/" target="_blank" rel="external">Ruby</a> 小姑娘，Hindley-Milner 语言家族的掌中宝 <a href="https://link.zhihu.com/?target=http%3A//book.realworldhaskell.org/" target="_blank" rel="external">Haskell</a> 都是不错的选择。但有这么一位你躲不开的，必须得认识的大伙伴 — C++，你得做好与他深交的准备：</p>
+<ul>
+<li>入门：<em><a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/25708312/" target="_blank" rel="external">C++ Primer</a></em></li>
+<li><p>[可选] 进阶：</p>
+</li>
+<li><p>高效使用：<em><a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1842426/" target="_blank" rel="external">Effective C++</a></em></p>
+</li>
+<li>深入了解：《<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1091086/" target="_blank" rel="external">深度探索C++对象模型</a>》；<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/2378124/" target="_blank" rel="external">C++Templates</a></li>
+<li>研究反思：<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1456860/" target="_blank" rel="external">The Design and Evolution of C++</a> ；对于C++这个 <a href="https://link.zhihu.com/?target=http%3A//www.urbandictionary.com/define.php%3Fterm%3DNecessary%2BEvil" target="_blank" rel="external">Necessary Evil</a> ，看这本书可以让你选择是成为守夜人还是守日人。</li>
+</ul>
+<p>现实是残酷的，在软件工程领域仍旧充斥着一些狂热者，他们只掌握着一种编程语言，也只想掌握一种语言，他们认为自己掌握的这门语言是最好的，其他异端都是傻X。这种人也不是无药可救，有一种很简单的治疗方法：让他们写一个编译器。要想真正理解编程语言，你必须亲自实现一个。现在是入门阶段，不要求你去上一门编译器课程，但要求你能至少实现一个简单的解释器。</p>
+<p>供你参考的学习资源：</p>
+<ul>
+<li><a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/2152385/" target="_blank" rel="external">《程序设计语言-实践之路》</a>：CMU编程语言原理的教材，程序语言入门书，现在就可以看，会极大扩展你的眼界，拉开你与普通人的差距。</li>
+<li><a href="https://link.zhihu.com/?target=https%3A//www.coursera.org/course/proglang" target="_blank" rel="external">Coursera 编程语言MOOC</a>：课堂上你能接触到极端FP（函数式）的SML，中性偏FP的Racket，以及极端OOP（<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E9%259D%25A2%25E5%2590%2591%25E5%25AF%25B9%25E8%25B1%25A1%25E7%25A8%258B%25E5%25BA%258F%25E8%25AE%25BE%25E8%25AE%25A1" target="_blank" rel="external">面向对象</a>）的Ruby，并学会问题的FP分解 vs OOP分解、ML的模式匹配、Lisp宏、不变性与可变性、解释器的实现原理等，让你在将来学习新语言时更加轻松并写出更好的程序。</li>
+<li><a href="https://link.zhihu.com/?target=https%3A//www.udacity.com/course/cs262" target="_blank" rel="external">Udacity CS262 Programming Language</a>：热热身，教你写一个简单的浏览器——其实就是一个javascript和html的解释器，完成后的成品还是很有趣的；接下来，试着完成一个之前在SICP部分提到过的项目：用Python写一个 <a href="https://link.zhihu.com/?target=http%3A//inst.eecs.berkeley.edu/%7Ecs61a/fa13/proj/scheme/scheme.html" target="_blank" rel="external">Scheme Interpreter</a></li>
+</ul>
+<p><strong>其他</strong></p>
+<p>编程入门阶段比较容易忽视的几点：</p>
+<ol>
+<li>学好英语：英语是你获取高质量学习资源的主要工具，但在入门阶段，所看的那些翻译书信息损耗也没那么严重，以你自己情况权衡吧。此外英语的重要性更体现在沟通交流上，<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E6%259E%2597%25E7%25BA%25B3%25E6%2596%25AF%25C2%25B7%25E6%2589%2598%25E7%2593%25A6%25E5%2585%25B9" target="_blank" rel="external">Linus Torvalds</a>一个芬兰人，一口流利的英语一直是他招募开发者为Linux干活的的法宝，这是你的榜样。</li>
+<li>学会提问：学习中肯定会遇到问题，首先应该学会搜索引擎的<a href="https://link.zhihu.com/?target=https%3A//support.google.com/websearch/answer/35890%3Fhl%3Dzh-Hans" target="_blank" rel="external">「高级搜索」</a>，当单靠检索无法解决问题时，去<a href="https://link.zhihu.com/?target=http%3A//stackoverflow.com/" target="_blank" rel="external">Stack Overflow</a> 或<a href="http://www.zhihu.com/" target="_blank" rel="external">知乎</a> 提问，提问前读读这篇文章：<a href="https://link.zhihu.com/?target=http%3A//mattgemmell.com/what-have-you-tried/" target="_blank" rel="external">What have you tried?</a></li>
+<li>不要做一匹独狼：尝试搭建一个像<a href="https://link.zhihu.com/?target=http%3A//ezyang.com/" target="_blank" rel="external">这样</a>简单的个人网站，不要只是一个孤零零的<a href="https://link.zhihu.com/?target=http%3A//web.stanford.edu/%7Ejtysu/" target="_blank" rel="external">About页面</a>，去学习 <a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">Markdown</a> 与 <a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/LaTeX" target="_blank" rel="external">LaTeX</a>，试着在Blog上记录自己的想法，并订阅自己喜欢的编程类博客。推荐几个供你参考：<a href="https://link.zhihu.com/?target=http%3A//www.joelonsoftware.com/" target="_blank" rel="external">Joel on Software</a>, <a href="https://link.zhihu.com/?target=http%3A//www.norvig.com/index.html" target="_blank" rel="external">Peter Norvig</a>, <a href="https://link.zhihu.com/?target=http%3A//blog.codinghorror.com/" target="_blank" rel="external">Coding Horror</a></li>
+</ol>
+<p><strong>小结</strong></p>
+<p>以上的内容你不应该感到惧怕，编程的入门不是几个星期就能完成的小项目。期间你还会遇到无数的困难，当你碰壁时试着尝试<a href="https://link.zhihu.com/?target=http%3A//www.quora.com/Education/How-can-you-learn-faster/answer/Acaz-Pereira" target="_blank" rel="external">「费曼」技巧</a>：将难点分而化之，切成小知识块，再逐个对付，之后通过向别人清楚地解说来检验自己是否真的理解。当然，依旧会有你解决不了的问题，这时候不要强迫自己——很多时候当你之后回过头来再看这个问题时，一切豁然开朗。</p>
+<p>此外不要局限于上文提到的那些材料，还有一些值得在入门阶段以及将来的提升阶段反复阅读的书籍。这里不得不提到在 <a href="https://link.zhihu.com/?target=http%3A//stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read" target="_blank" rel="external">stackoverflow </a>上票选得出的程序员必读书单中，排在前两位的两本书：</p>
+<p><em><a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1477390/%3Fi%3D0" target="_blank" rel="external">Code Complete</a> ：</em>不管是对于经验丰富的程序员还是对于那些没有受过太多的正规训练的新手程序员，此书都能用来填补自己的知识缺陷。对于入门阶段的新手们，可以重点看看涉及变量名，测试，个人性格的章节。</p>
+<p><em><a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/1417047/" target="_blank" rel="external">The Pragmatic Programmer</a> :</em> 程序员入门书，终极书。有人称这本书为代码小全：从 <a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E4%25B8%2580%25E6%25AC%25A1%25E4%25B8%2594%25E4%25BB%2585%25E4%25B8%2580%25E6%25AC%25A1" target="_blank" rel="external">DRY</a> 到 <a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/KISS%25E5%258E%259F%25E5%2588%2599" target="_blank" rel="external">KISS</a>，从做人到做程序员，这本书教给了你一切，你所需的只是遵循书上的指导。</p>
+<p>这本书的作者 <a href="https://link.zhihu.com/?target=http%3A//en.wikipedia.org/wiki/Dave_Thomas_%28programmer%29" target="_blank" rel="external">Dave</a> ，在书中开篇留了这样一段话：</p>
+<blockquote>
+<p><strong>You’re a Pragmatic Programmer. You aren’t wedded to any particular technology, but you have a broad enough background in the science, and your experience with practical projects allows you to choose good solutions in particular situations.Theory and practice combine to make you strong. You adjust your approach to suit the current circumstances and environment. And you do this continuously as the work progresses. Pragmatic Programmers get the job done, and do it well.</strong></p>
+</blockquote>
+<p>这段话以及他创立的 <a href="https://link.zhihu.com/?target=https%3A//pragprog.com/" target="_blank" rel="external">The Pragmatic Bookshelf</a> 一直以来都积极地影响着我，因此这篇指南我也尽量贯彻了这个思想，引导并希望你们成为一名真正的 Pragmatic Programmer 。</p>
+<h2 id="u540E_u8BB0"><a href="#u540E_u8BB0" class="headerlink" title="后记"></a><strong>后记</strong></h2><p>如果你能设法完成以上的所有任务，恭喜你，你已经真正实现了编程入门。这意味着你在之后更深入的学习中，不会畏惧那些学习新语言的任务，不会畏惧那些「复杂」的API，更不会畏惧学习具体的技术，甚至感觉很容易。当然，为了掌握这些东西你依旧需要大量的练习，腰还是会疼，走路还是会费劲，一口气也上不了5楼。但我能保证你会在思想上有巨大的转变，获得极大的自信，看老师同学和 <a href="https://link.zhihu.com/?target=http%3A//www.csdn.net/" target="_blank" rel="external">CSDN</a> 的眼光会变得非常微妙，虽然只是完成了编程入门，但已经成为了程序员精神世界的高富帅。不，我说错了，即使是高富帅也不会有强力精神力，他也会怀疑自己，觉得自己没钱就什么都不是了。但总之，你遵循指南好好看书，那就会体验「会当凌绝顶」的感觉。</p>
+<p><img src="https://pic2.zhimg.com/b330ecbc2cd43a23f6beff47bbf4cbe9_b.jpg" alt=""></p>
+<p>欢迎实践过的同学现身说法。</p>
+<h2 id="u9644_28zh_E8ng_29_u5F55_28w_E9n_29"><a href="#u9644_28zh_E8ng_29_u5F55_28w_E9n_29" class="headerlink" title="附(zhèng)录(wén)"></a>附(zhèng)录(wén)</h2><p><strong>@萧井陌 的编程类回答汇总</strong></p>
+<p>方向：</p>
+<ul>
+<li><a href="http://www.zhihu.com/question/22032651/answer/30474626" target="_blank" rel="external">怎么成为一个优秀的程序员，而不是一个优秀的码农？</a></li>
+</ul>
+<blockquote>
+<p>优秀的程序员会告诉你打根基的重要性，会劝你在厚积薄发前要隐忍。<br>优秀的程序员应该善用包装…</p>
+</blockquote>
+<ul>
+<li><a href="http://www.zhihu.com/question/25753307/answer/31518801" target="_blank" rel="external">计算机本科应届毕业生要有怎样的能力才算比较好的？</a></li>
+</ul>
+<blockquote>
+<p>对本科生的要求其实很简单，认真学过专业课就行。<br>所谓认真学过专业课的程度是：…</p>
+</blockquote>
+<ul>
+<li><a href="http://www.zhihu.com/question/24553087/answer/28207650" target="_blank" rel="external">想进入微软，本科该如何努力？</a></li>
+</ul>
+<blockquote>
+<p>你可以找一个美国大学学他们的计算机课程，课程设置和教材都能查到，书都能买到。那几所学校的本科课程安排差异比较大，全学也不是不可以。做好这几点: …</p>
+</blockquote>
+<ul>
+<li><a href="http://zhihu.com/question/26246532/answer/32552164" target="_blank" rel="external">大四学生，想通过两到三年的积累去Google工作，请问应如何准备？</a></li>
+</ul>
+<blockquote>
+<p>我觉得你得先找到一个技术方向，树立一个以此技术方向为首要目标的原则，做好这个方面的事情，<u>对这个方面的所有技术细节都务求深入了解</u>。然后呢…</p>
+</blockquote>
+<ul>
+<li><a href="http://zhihu.com/question/26546908/answer/33168038" target="_blank" rel="external">文科生如何转行当程序员？考研是最好选择吗？</a></li>
+</ul>
+<blockquote>
+<p>0. 找一本《计算机导论》类的书籍看看，了解一下行业大致情况，随便翻翻就好<br>1. 去维基百科翻一下历年图灵奖得奖情况，粗略了解一下行业历史…</p>
+</blockquote>
+<ul>
+<li><a href="http://www.zhihu.com/question/23174048/answer/23813785" target="_blank" rel="external">有哪些适合程序员读的人文书籍？</a></li>
+</ul>
+<blockquote>
+<p>程序员也是人, 程序员的整体素质在其他行业也是通用的.<br>so….这就产生了很多其他行业的书…</p>
+</blockquote>
+<p>方法：</p>
+<ul>
+<li><p><a href="http://zhihu.com/question/26399536/answer/32672029" target="_blank" rel="external">如何学习不感兴趣但自己也认为很重要的东西?</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/24063022/answer/26556311" target="_blank" rel="external">兴趣广泛和保持专注是否矛盾？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/23734409/answer/25489627" target="_blank" rel="external">在学习编程的过程中如何权衡寻求方法工具和埋头苦干？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/26157282/answer/32272817" target="_blank" rel="external">新手关于如何看编程经典书的一些疑惑？</a></p>
+</li>
+<li><p><a href="https://link.zhihu.com/?target=http%3A//zhi.hu/aaOB" target="_blank" rel="external">计算机方面的经典书籍，不做或少做习题会对学习效果造成多大影响呢？</a></p>
+</li>
+</ul>
+<p>细分：</p>
+<ul>
+<li><p><a href="http://zhihu.com/question/22482295/answer/23508622" target="_blank" rel="external">如何去学习程序员的三大浪漫，编译原理，图形学，操作系统？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/27153673/answer/35456224" target="_blank" rel="external">数据库、操作系统、编译原理应该以怎样的的顺序学习？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/26557127/answer/33908496" target="_blank" rel="external">如何在六个月的时间内完成一个简单的操作系统，应该要学些什么？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/26760072/answer/33924195" target="_blank" rel="external">计算机系大四学生如何在六个月的时间内完成一个编译器？要学些什么？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/25693637/answer/31522591" target="_blank" rel="external">算法到底应该怎么学？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/26669731/answer/33605606" target="_blank" rel="external">WEB开发还有前途吗？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/27534765/answer/37013909" target="_blank" rel="external">嵌入式开发还有前途吗？</a></p>
+</li>
+<li><p><a href="http://zhihu.com/question/26415273/answer/32698237" target="_blank" rel="external">已参加工作的程序员如何系统提升英语阅读能力？</a></p>
+</li>
+</ul>
+<p><strong>@萧井陌的知乎回答集锦</strong>（按赞同数排列）(2015/2/3 更新)</p>
+<ul>
+<li><a href="https://link.zhihu.com/?target=http%3A//pan.baidu.com/s/1i3jAhiX" target="_blank" rel="external">PDF 格式</a></li>
+<li><a href="https://link.zhihu.com/?target=http%3A//pan.baidu.com/s/1qWqNzPi" target="_blank" rel="external">ePub 格式</a></li>
+</ul>
+<h2 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a><strong>前言</strong></h2><p>如今编程成为了一个越来越重要的「技能」：作为设计师，懂一些编程可能会帮你更好地理解自己的工作内容；作为创业者，技术创始人的身份则会让你的很多工作显得更容易。而作为刚想入门的新手，面对眼前海量的信息，或许根本不知道从哪里开始；入门轻松度过初级材料的学习后，发现学习越来越困难，陡峭的学习曲线又让你望而却步；你知道如何在页面上打印输出一些文本行，但是你不知道何时该进行一个真正的有用的项目；你不清楚自己还有哪些不知道的东西，你甚至搞不清下一步该学什么。</p>
+<p>这篇文章的内容对此不仅会有一些方向性的建议，还会包含一个<u><strong>基础核心向</strong></u>的编程入门导引（<strong><u>进阶求职向</u></strong>的相关内容目前推荐您关注 <a href="https://www.zhihu.com/people/7303e4f770e8055f3bedc4cf3b192325" target="_blank" rel="external">@Michael282694</a> 的专栏文章：<a href="http://zhuanlan.zhihu.com/Michael282694/20166216" target="_blank" rel="external">编程者加血，客官进来看看呗！</a>）。当然，Step by Step 的路线是不现实的，并且每个人都会有自己的特点，所以给出的这个编程入门导引更多的是为了引发读者的思考，最终帮助你形成适用于自己的学习路线。几位读者的实例：</p>
+<ul>
+<li><p><a href="https://link.zhihu.com/?target=http%3A//zhi.hu/hhiA" target="_blank" rel="external">非计算机专业，计算机如何入门？ - 浪无痕</a></p>
+</li>
+<li><p><a href="https://link.zhihu.com/?target=http%3A//my.oschina.net/voler/blog/396424" target="_blank" rel="external">我只想成为一名合格的程序员</a></p>
+</li>
+<li><p><a href="https://link.zhihu.com/?target=http%3A//blog.csdn.net/a910626/article/details/45223657" target="_blank" rel="external">知乎《编程入门指南v1.3》思维导图</a></p>
+</li>
+</ul>
+<p>但要注意：这篇文章是写给那些真心想学编程的人看的——那些憋着一股狠劲儿，一定要做出个什么真东西，不学好不罢休的人；而不是那些「听说编程好玩」的人，在我看来，这种人永远都入不了编程的门，更别提做出个像样的东西来了。</p>
+<hr>
+<p>「Disclaimer」： 虽然整篇文章的基调都是所谓的「Strong Opinions, Weakly Held」，<u>但读者还是应该像怀疑身边所有东西那样 怀疑我们所写内容的准确性</u>。若有任何相关疑问欢迎在知乎或技术社区 <a href="https://link.zhihu.com/?target=http%3A//cocode.cc/" target="_blank" rel="external">CoCode</a> 公开讨论。</p>
+<p>与指南相关的知乎问答：</p>
+<ul>
+<li><a href="http://www.zhihu.com/question/28958874" target="_blank" rel="external">编程入门指南中为什么没有 Java？ - 编程</a></li>
+<li><a href="http://www.zhihu.com/question/31756456" target="_blank" rel="external">编程入门指南中为什么没有 C#？ - 编程</a></li>
+</ul>
+<h2 id="u5FC3_u6001_u8C03_u6574"><a href="#u5FC3_u6001_u8C03_u6574" class="headerlink" title="心态调整"></a><strong>心态调整</strong></h2><p><strong>确定目标</strong></p>
+<blockquote>
+<p>You can code. They cannot. That is pretty damn cool.<br>– <a href="https://link.zhihu.com/?target=http%3A//learnpythonthehardway.org/book/" target="_blank" rel="external">Learn Python The Hard Way</a></p>
+</blockquote>
+<p>在你学习编程之前思考一下你的目标，当你有最终目标时道路会更加的清晰。那么，你想要写什么？网站？游戏？iOS或者Android应用？或是你是想自动化完成一些乏味的任务让你有更多的时间看窗外的风景？也许你只是想更具有就业竞争力找个好工作。所有的这些都是有价值的目标，这些目标都是你编程学习推动力的一部分，没有推动力的人，是无法在略显枯燥的漫长学习之旅中走远的。</p>
+<p>这段视频也许能给你启发：<a href="https://link.zhihu.com/?target=http%3A//v.youku.com/v_show/id_XNTIzNzE2NzQ4.html" target="_blank" rel="external">What Most Schools Don’t Teach</a></p>
+<p><strong>不要浮躁</strong></p>
+<blockquote>
+<p>Bad programming is easy. Even Dummies can learn it in 21 days. Good programming requires thought, but everyone can do it and everyone can experience the extreme satisfaction that comes with it.</p>
+</blockquote>
+<p>不管是在线下还是线上的书店，满目都是《21天学通Java》这种速成书目，它们都承诺在很短一段时间内就让你能够学会相关技术。Matthias Felleisen在他的著作 <a href="https://link.zhihu.com/?target=http%3A//www.ccs.neu.edu/home/matthias/HtDP2e/Draft/index.html" target="_blank" rel="external">How to Design Programs, Second Edition</a> 一书中明确指出了这种「速成」的趋势并予以了以上的讽刺。</p>
+<p>所谓的「捷径」或者说「<a href="https://link.zhihu.com/?target=http%3A//en.wikipedia.org/wiki/No_Silver_Bullet" target="_blank" rel="external">银弹</a>」是不存在的，智者说过，精通某个东西需要10年或10000个小时，也就是汉语中的「十年磨一剑」，所以不用着急，功不唐捐。</p>
+<p><strong>培养兴趣</strong></p>
+<blockquote>
+<p>Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.</p>
+<p>– <a href="https://link.zhihu.com/?target=http%3A//en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="external">Linus Torvalds</a></p>
+</blockquote>
+<p>沉醉于编程，编程更是为了兴趣。兴趣是推动力的不竭源泉，保持这种充满兴趣的感觉，以便于你能将其投入到你的10年/10000小时的编程时间中。编程很有趣，那是探索的喜悦。那是创造的喜悦。看到自己亲手完成的作品显示在屏幕上很有趣。有人为你的代码而惊叹很有趣。有人在公共场合称赞你的产品、邻居使用你的产品、以及在媒体上讨论你的产品很有趣。编程应该十分有趣，若并非如此，就找出导致编程无趣的问题，然后解决之。</p>
+<h2 id="u5F00_u59CB_u5B66_u4E60"><a href="#u5F00_u59CB_u5B66_u4E60" class="headerlink" title="开始学习"></a><strong>开始学习</strong></h2><p><strong>令人警醒的故事</strong></p>
+<p>刚上初中时我便开始了编程学习，很不幸，我读完了好几本当时普遍存在的诸如《21天精通C++》这类的垃圾书，当时读完也无大碍，甚至还能写点小程序。但是软件出故障了我不知道为什么，稍显庞大的编程问题无从下手，碰到现有的库做不到的事也只能两手一摊。虽然我每天不停地编码，但我发现自己的编程能力却是提高的如此缓慢，对于「迭代」与「递归」的概念只有极其有限的了解，可以说只是把计算机当成了计算器来使用。</p>
+<p>进入大学后，我主修了物理学，最初的一段时间里我一直在记忆背诵那些物理公式，却不理解她们是如何得出的，她们之间有什么联系，亦或是她们的意义。我不停地学习如何计算解答一些常见的物理问题，却对在这些Hows背后的Whys一无所知。</p>
+<p>而在我尝试做一些基于物理行为的电脑游戏时我再次遇到了之前的的困难：面对新问题时无从下手，面对新问题时的恐惧不断累积滋生，我开始主动逃避，不去真正地理解，而是幻想能通过Google搜索复制粘贴代码解决问题。幸运的是，大二时的一堂课完全改变了我的学习方法。那是第一次我有了「开天眼」的感觉，我痛苦地意识到，我对一些学科只有少的可怜的真正的理解，包括我主修的物理与辅修的计算机科学。</p>
+<p>关于那堂课：那时我们刚刚学习完电学和狭义相对论的内容，教授在黑板上写下了这两个主题，并画了一根线将他们连了起来。「假设我们有一个电子沿导线以相对论级别的速度移动…」，一开始教授只是写下了那些我们所熟悉的电学与狭义相对论的常见公式，但在数个黑板的代数推导后，磁场的公式神奇的出现了。虽然几年前我早已知道这个公式，但那时我根本不知道这些现象间的有着这样潜在的联系。磁与电之间的差别只是「观察角度」的问题，我猛然醒悟，此后我不再仅仅追求怎么做(How)，我开始问为什么(why)，开始回过头来，<u>拾起那些最基础的部分</u>，学习那些我之前我本该好好学的知识。这个回头的过程是痛苦的，希望你们能就此警醒，永远不要做这种傻事。</p>
+<p><strong>警醒后的反思</strong></p>
+<p><img src="https://pic1.zhimg.com/09cfc28b6d5433dac166080244a839ec_b.jpg" alt=""></p>
+<p>这幅图取自 Douglas Hofstadter 的著作_<a href="https://link.zhihu.com/?target=http%3A//en.wikipedia.org/wiki/G%25C3%25B6del%2C_Escher%2C_Bach" target="_blank" rel="external">Gödel, Escher, Bach</a>_。图中的每一个字母都由其他更小的字母组成。在最高层级，我们看的是”MU”，M 这个字母由三个HOLISM（<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E6%2595%25B4%25E5%2585%25A8%25E8%25A7%2580" target="_blank" rel="external">整全觀</a>）构成，U则是由一个REDUCTIONISM（<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E8%25BF%2598%25E5%258E%259F%25E8%25AE%25BA" target="_blank" rel="external">还原论</a>）构成，前者的每一个字母都包含后者的后者整个词，反之亦然。而在最低层级，你会发现最小的字母又是由重复的”MU”组成的。</p>
+<p>每一层次的抽象都蕴含着信息，如果你只是幼稚地单一运用整体论在最高层级观察，或运用还原论观察最低层级，你所得到的只有”MU”（在一些地区的方言中mu意味着什么都没有）。问题来了，怎样才能尽可能多的获取每个层级的信息？或者换句话说，该怎样学习复杂领域（诸如编程）包含的众多知识？</p>
+<p>教育与学习过程中普遍存在一个关键问题：初学者们的目标经常过于倾向<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E6%2595%25B4%25E5%2585%25A8%25E8%25A7%2580" target="_blank" rel="external">整全觀</a>而忽略了基础，举个常见的例子，学生们非常想做一个机器人，却对背后的</p>
+<p>理解物理模型 → 理解电子工程基础 → 理解伺服系统与传感器 → 让机器人动起来</p>
+<p>这一过程完全提不起兴趣。</p>
+<p>在这里对于初学者有两个大坑：</p>
+<ol>
+<li><p>如果初学者们只与预先构建好的「发动机和组件」接触（没有理解和思考它们构造的原理），这会严重限制他们在将来构建这些东西的能力，并且在诊断解决问题时无从下手。</p>
+</li>
+<li><p>第二个坑没有第一个那么明显：幼稚的「整体论」方法有些时候会显得很有效，这有一定的隐蔽性与误导性，但是一两年过后（也许没那么长），当你在学习路上走远时，再想回过头来「补足基础」会有巨大的心理障碍，你得抛弃之前自己狭隘的观念，耐心地缓步前进，这比你初学时学习基础知识困难得多。</p>
+</li>
+</ol>
+<p>但也不能矫枉过正，陷入还原论的大坑，初学时便一心试图做宏大的理论，这样不仅有一切流于理论的危险，枯燥和乏味还会让你失去推动力。这种情况经常发生在计算机科班生身上。</p>
+<p>为了更好理解，可以将学习编程类比为学习厨艺：你为了烧得一手好菜买了一些关于菜谱的书，如果你只是想为家人做菜，这会是一个不错的主意，你重复菜谱上的步骤也能做出不赖的菜肴，但是如果你有更大的野心，真的想在朋友面前露一手，做一些独一无二的美味佳肴，甚至成为「大厨」，你必须理解这些菜谱背后大师的想法，理解其中的理论，而不仅仅是一味地实践。但是如果你每天唯一的工作就是阅读那些厚重的理论书籍，因为缺乏实践，你只会成为一个糟糕的厨子，甚至永远成为不了厨子，因为看了几天书后你就因为枯燥放弃了厨艺的学习。</p>
+<p>总之，编程是连接理论与实践的纽带，是<a href="https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/%25E8%25AE%25A1%25E7%25AE%2597%25E6%259C%25BA%25E7%25A7%2591%25E5%25AD%25A6" target="_blank" rel="external">计算机科学</a>与计算机应用技术相交融的领域。正确的编程学习方法应该是：通过自顶而下的探索与项目实践，获得编程直觉与推动力；从自底向上的打基础过程中，获得最重要的通用方法并巩固编程思想的理解。</p>
+<p>作为初学者，应以<u>后者为主，前者为辅</u>。</p>
+
+        
+
+        
+
+      
+    </div>
+    
+
+    
+
+    
+
+    <footer class="article-footer print-invisible">
+      <a data-url="http://kepler.ml/2016/01/29/guide-to-CS/" data-id="cik0jkhqm000vvow5vfzt76n4" class="article-share-link">Share</a>
+      
+        <a href="http://kepler.ml/2016/01/29/guide-to-CS/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/code/">code</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav" class="print-invisible">
+  
+  
+    <a href="/2016/01/23/droplet-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">农业工业化的一瞥</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+<div class="print-invisible">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+</div>
+
+</section>
+      
+        <aside id="sidebar" class="print-invisible">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">recents</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/29/guide-to-CS/" class="thumbnail">
+  
+    <span style="background-image:url(http://ww4.sinaimg.cn/large/7176c9b5gw1f0hcl7500kj20nz0b40uc.jpg)" alt="编程入门指南2.0版" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/29/guide-to-CS/" class="title">编程入门指南2.0版</a></p>
+              <p class="item-category"></p>
+              <p class="item-date"><time datetime="2016-01-30T03:04:29.000Z" itemprop="datePublished">2016-01-29</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/23/droplet-1/" class="thumbnail">
+  
+    <span style="background-image:url(http://ww3.sinaimg.cn/large/7176c9b5gw1f0ajaxuwmhj20dw0910tl.jpg)" alt="农业工业化的一瞥" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/23/droplet-1/" class="title">农业工业化的一瞥</a></p>
+              <p class="item-category"></p>
+              <p class="item-date"><time datetime="2016-01-24T04:20:26.000Z" itemprop="datePublished">2016-01-23</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/22/guide-of-github/" class="thumbnail">
+  
+    <span style="background-image:url(http://www.palermo.edu/Archivos_content/ingenieria/top/130712_git_github_topdenota1.jpg)" alt="guide-of-github" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/22/guide-of-github/" class="title">guide-of-github</a></p>
+              <p class="item-category"></p>
+              <p class="item-date"><time datetime="2016-01-22T20:58:27.000Z" itemprop="datePublished">2016-01-22</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/20/sublime-text/" class="thumbnail">
+  
+    <span style="background-image:url(http://www.tech-recipes.com/wp-content/uploads/2014/01/sublime-text-logo2.png)" alt="Sublime Text 全程指南" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/20/sublime-text/" class="title">Sublime Text 全程指南</a></p>
+              <p class="item-category"></p>
+              <p class="item-date"><time datetime="2016-01-21T03:59:30.000Z" itemprop="datePublished">2016-01-20</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              <a href="/2016/01/20/what-to-read/" class="thumbnail">
+  
+    <span style="background-image:url(http://ww1.sinaimg.cn/large/7176c9b5gw1f032duwuw8j205k05kdfu.jpg)" alt="读什么书，怎么读书（专业技能类）" class="thumbnail-image"></span>
+  
+</a>
+            </div>
+            
+            <div class="item-inner">
+              
+              <p class="item-title"><a href="/2016/01/20/what-to-read/" class="title">读什么书，怎么读书（专业技能类）</a></p>
+              <p class="item-category"></p>
+              <p class="item-date"><time datetime="2016-01-21T03:59:30.000Z" itemprop="datePublished">2016-01-20</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/digest/">digest</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">tag cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Finance/" style="font-size: 10px;">Finance</a> <a href="/tags/Strategy/" style="font-size: 10px;">Strategy</a> <a href="/tags/code/" style="font-size: 10px;">code</a> <a href="/tags/coder/" style="font-size: 10px;">coder</a> <a href="/tags/diary/" style="font-size: 20px;">diary</a> <a href="/tags/digest/" style="font-size: 20px;">digest</a> <a href="/tags/droplet/" style="font-size: 10px;">droplet</a> <a href="/tags/media/" style="font-size: 10px;">media</a> <a href="/tags/reality/" style="font-size: 10px;">reality</a> <a href="/tags/工具/" style="font-size: 20px;">工具</a> <a href="/tags/思考/" style="font-size: 10px;">思考</a> <a href="/tags/方法论/" style="font-size: 10px;">方法论</a> <a href="/tags/转载/" style="font-size: 10px;">转载</a> <a href="/tags/阅读/" style="font-size: 10px;">阅读</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">12</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+          <li>
+            <a href="http://lucida.me/">Lucida</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+  <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>
+      
+    </div>
+    <footer id="footer" class="print-invisible">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Aphelion<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/JamesPan/hexo-theme-icarus">icarus</a>. 
+Analyse with <script src="http://s23.cnzz.com/z_stat.php?id=1257137759&web_id=1257137759" language="JavaScript"></script>
+
+    </div>
+  </div>
+</footer>
+    
+
+<script>
+  var disqus_shortname = 'Yijundisqus';
+  
+  var disqus_identifier = '/2016/01/29/guide-to-CS/';
+  var disqus_title = '编程入门指南2.0版';
+  var disqus_url = 'http://kepler.ml/2016/01/29/guide-to-CS/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + 'a.disquscdn.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script async="async" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/2.0/busuanzi.mini.js"></script>
+
+<script type="text/javascript">
+$("span.heimu").attr("title", "你知道的太多了")
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
